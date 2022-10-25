@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+main div {
+  height: 100vh;
+}
+main #frontpage {
+  position: relative;
+}
+main #frontpage h1 {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  color: #006c43;
+}
+main #frontpage img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+main #about {
+  overflow: hidden;
+}
+main #about h1 {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  color: #006c43;
+}
+main #about p {
+  text-overflow: ellipsis;
+  margin: 0 1rem;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #3e3e3e;
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  width: 100%;
+  display: inherit;
+  justify-content: space-around;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.3rem 0.6em;
+}
+nav ul li a:hover {
+  color: #fff;
+  background-color: #006c43;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 600px) {
+  nav {
+    display: none;
+  }
+  main {
+    display: flex;
+  }
+  main div {
+    width: 50vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  nav {
+    display: none;
+  }
+  main {
+    margin: 10rem;
+    display: flex;
+    gap: 5rem;
+  }
+  main div {
+    width: 100%;
+    height: 60vh;
+    border: 1px solid black;
+  }
+}/*# sourceMappingURL=style.css.map */

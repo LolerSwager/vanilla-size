@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$active: #006c43;
+$backgroundcolor: #3e3e3e;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+main {
+    div {
+        height: 100vh;
+    }
+    #frontpage {
+        position: relative;
+        h1 {
+            margin: 1rem;
+            display: flex;
+            justify-content: center;
+            color: $active;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    #about {
+        overflow: hidden;
+        h1 {
+            margin: 1rem;
+            display: flex;
+            justify-content: center;
+            color: $active;
+            
+        }
+        p {
+            text-overflow: ellipsis;
+            margin: 0 1rem;
+        }
+    }
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: $backgroundcolor;
+    display: flex;
+    align-items: center;
+    ul {
+        width: 100%;
+        display: inherit;
+        justify-content: space-around;
+        li {
+            list-style: none;
+            a {
+                color: white;
+                text-decoration: none;
+                padding: 0.3rem 0.6em;
+                &:hover {
+                    color: #fff;
+                    background-color: $active;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    nav {
+        display: none;
+    }
+    main{
+        display: flex;
+        div{
+            width: 50vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    nav {
+        display: none;
+    }
+    main{
+        margin: 10rem;
+        display: flex;
+        gap: 5rem;
+        div{
+            width: 100%;
+            height: 60vh;
+            border: 1px solid black;
+            
+        }
+    }
+}
