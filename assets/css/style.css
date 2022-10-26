@@ -6,11 +6,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
 main div {
   height: 100vh;
 }
@@ -18,7 +13,6 @@ main #frontpage {
   position: relative;
 }
 main #frontpage h1 {
-  margin: 1rem;
   display: flex;
   justify-content: center;
   color: #006c43;
@@ -36,7 +30,6 @@ main #about {
   overflow: hidden;
 }
 main #about h1 {
-  margin: 1rem;
   display: flex;
   justify-content: center;
   color: #006c43;

@@ -13,5 +13,15 @@ self.addEventListener("install", (event) => {
 })
 
 self.addEventListener("fetch", (event) => {
+    console.log("Handling fetch event for", event.request.url)
+
+    event.respondWith(
+        caches.open(cacheAllowList[0].then((cache) => {
+            return cache.match(event.request)
+        }))
+    )
+})
+
+self.addEventListener("fetch", (event) => {
     return
 })

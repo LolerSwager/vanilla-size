@@ -10,11 +10,6 @@ $backgroundcolor: #3e3e3e;
     font-family: "Poppins", sans-serif;
 }
 
-body{
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
 main {
     div {
         height: 100vh;
@@ -22,7 +17,6 @@ main {
     #frontpage {
         position: relative;
         h1 {
-            margin: 1rem;
             display: flex;
             justify-content: center;
             color: $active;
@@ -39,11 +33,9 @@ main {
     #about {
         overflow: hidden;
         h1 {
-            margin: 1rem;
             display: flex;
             justify-content: center;
             color: $active;
-            
         }
         p {
             text-overflow: ellipsis;
@@ -105,7 +97,6 @@ nav {
             width: 100%;
             height: 60vh;
             border: 1px solid black;
-            
         }
     }
 }
